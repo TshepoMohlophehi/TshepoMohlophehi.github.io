@@ -171,6 +171,10 @@ footer {
 .About-Container h3, h2{
     color: aqua;
 }
+.About-Container li {
+	font-weight: bolder;
+	color:white;
+}
 .About-Container p {
     font-weight: bolder;
     color: white;
