@@ -234,5 +234,12 @@ footer {
         height: auto;
         margin-bottom:20px /* Adjust nav width */
     }
+    .nav_menu {
+        width: 100%;
+        height: auto;
+        position: static;
+        overflow: hidden;
+        margin-bottom:20px /* Adjust nav width */
+    }
 }
 
