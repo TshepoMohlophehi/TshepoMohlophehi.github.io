@@ -189,3 +189,50 @@ footer {
     border-radius: 10px;
     border: 2px solid cyan;
 }
+
+/* Styles file */
+
+/* ... Existing CSS rules ... */
+
+.wrapper {
+    background-color: purple;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 90%;
+    margin: 50px auto; /* Center the wrapper */
+    border-radius: 10px;
+    border: 3px solid aqua;
+    overflow: hidden;
+    position: static;
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 600px) {
+    .Information-Container {
+        grid-template-columns: 1fr; /* Change to single column layout */
+    }
+
+    nav {
+        max-width: 100%; /* Adjust nav width */
+    }
+}
+
+@media (max-width: 600px) {
+    .About-Container {
+        padding: 20px; /* Change to single column layout */
+    }
+
+    .About-Container img {
+        width: 100%;
+        height: auto;
+        margin-bottom:20px /* Adjust nav width */
+    }
+    .About-Container2 {
+        padding: 20px; /* Change to single column layout */
+    }
+    .About-Container2 img {
+        width: 100%;
+        height: auto;
+        margin-bottom:20px /* Adjust nav width */
+    }
+}
+
