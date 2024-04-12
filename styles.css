@@ -99,7 +99,7 @@ header h1 {
     }
 
     nav li {
-        margin: 10px 0; 
+        margin:5px 0px 1px; 
         
     }
 }
@@ -261,8 +261,8 @@ footer {
         width: 100%;
         height: auto;
         position: static;
-        overflow: hidden;
-        margin-bottom:20px /* Adjust nav width */
+        overflow: visible;
+        margin-bottom:5px /* Adjust nav width */
     }
 }
 
