@@ -35,8 +35,20 @@ header {
 
 nav {
     display: flex;
+    flex-direction: column;
     max-width: 60%;
+    justify-content: flex-end;
 
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end; /* Align nav links to the right */
+}
+nav li {
+    list-style: none;
+    float: left;
+    margin: 15px auto;  
 }
 nav a {
     text-decoration: none;
@@ -68,16 +80,27 @@ header h1 {
     align-items: center;
 }
 
-nav li {
-    list-style: none;
-    float: left;
-    margin: 15px;  
-}
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+    header {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 15px;
+    }
+
     nav {
-        flex-direction: column;
-        align-items: center;
+        border-top: 5px solid cyan;
         max-width: 100%; 
+        justify-content: flex-start; 
+    }
+
+    nav ul {
+        flex-direction: row; 
+        align-items: center; 
+    }
+
+    nav li {
+        margin: 10px 0; 
+        
     }
 }
 
