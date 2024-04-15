@@ -30,7 +30,7 @@ header {
     justify-content:space-between;
     align-items:center;
     display: flex;
-    
+   
 }
 
 nav {
@@ -40,7 +40,6 @@ nav {
     justify-content: flex-end;
 
 }
-
 nav ul {
     display: flex;
     justify-content: flex-end; /* Align nav links to the right */
@@ -49,6 +48,7 @@ nav li {
     list-style: none;
     float: left;
     margin: 15px auto;  
+    font-size: 14px;
 }
 nav a {
     text-decoration: none;
@@ -57,7 +57,7 @@ nav a {
     color:aquamarine;
     padding: 12px;
     border-radius: 10px;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.2s ease-in-out;
     background-color: black;
     
 }
@@ -80,28 +80,47 @@ header h1 {
     align-items: center;
 }
 
-@media (max-width: 700px) {
+
+
+@media (max-width: 810px) {
     header {
-        flex-direction: column; 
-        align-items: flex-start; 
+        flex-direction: column; /* Change header layout to column */
+        align-items: flex-start; /* Align header content to the left */
         padding: 15px;
+        margin: 5px;
     }
 
     nav {
         border-top: 5px solid cyan;
-        max-width: 100%; 
-        justify-content: flex-start; 
+        max-width: 100%; /* Adjust nav width */
+        justify-content: flex-start; /* Align nav links to the left */
     }
 
     nav ul {
-        flex-direction: row; 
-        align-items: center; 
+        flex-direction: row; /* Change nav links layout to column */
+        align-items: center; /* Align nav links to the left */
     }
 
     nav li {
-        margin:5px 0px 1px; 
+        margin: 5px 0px 1px; /* Adjust margin for smaller screens */
+        width:auto;
         
     }
+}
+
+@media (max-width: 350px) {
+     nav ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start; /* Align nav links to the right */
+     }
+     nav li {
+          margin: 15px auto;
+          width:auto;
+          overflow: visible;
+          
+     }
+
 }
 
 
@@ -229,7 +248,7 @@ footer {
 }
 
 /* Add media query for smaller screens */
-@media (max-width: 600px) {
+@media (max-width: 810px) {
     .Information-Container {
         grid-template-columns: 1fr; /* Change to single column layout */
     }
@@ -239,7 +258,7 @@ footer {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 810px) {
     .About-Container {
         padding: 20px; /* Change to single column layout */
     }
@@ -264,5 +283,6 @@ footer {
         overflow: visible;
         margin-bottom:5px /* Adjust nav width */
     }
+
 }
 
